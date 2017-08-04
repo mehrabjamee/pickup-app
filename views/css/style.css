@@ -1,0 +1,45 @@
+nav {
+    height: 70px;
+    line-height: 70px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav material-icons {
+    height: 70px;
+    line-height: 70px;
+}
+
+nav .button-collapse i {
+    height: 70px;
+    line-height: 70px;
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 70px;
+        line-height: 70px;
+    }
+}
+
+.nav-wrapper {
+    background-color: #325ff4;
+}
+
+.pickupLogo {
+    max-height: 56px;
+}
+
+#basketball-pic {
+    width: 80%;
+}
+
+#volleyball-checkbox {
+    float: left;
+}
+
+.cardTitle {
+    float:left;
+    margin-top: 0px;
+    margin-right: 45%;
+}
+
+

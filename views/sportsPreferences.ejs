@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pickup App</title>
+        
+        <!-- Adding Materialize CSS, Google Material Icons, link to style.css page -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <!-- Firebase Insert Start -->
+        <script src="https://www.gstatic.com/firebasejs/4.1.5/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAC3Cdx-Ya4DiWK_2b1CBnSfLBPHyCaMkE",
+            authDomain: "pickup-app-991e4.firebaseapp.com",
+            databaseURL: "https://pickup-app-991e4.firebaseio.com",
+            projectId: "pickup-app-991e4",
+            storageBucket: "",
+            messagingSenderId: "81698118663"
+          };
+          firebase.initializeApp(config);
+        </script>
+        
+        <!-- Firebase Insert End -->
+        
+        <!-- Adding jquery to make things work -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+        
+        <script src="js/firebaseAuth.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="/" class="brand-logo left"><img id='pickupLogo' style="max-height: 60px; margin-top: 4px; margin-left: 5px" src='img/Pickup_Logo.svg' ></a>
+              <!--<ul id="nav-mobile" class="right hide-on-med-and-down">-->
+              <!--  <li><a href="sass.html">Sass</a></li>-->
+              <!--  <li><a href="badges.html">Components</a></li>-->
+              <!--  <li><a href="collapsible.html">JavaScript</a></li>-->
+              <!--</ul>-->
+            </div>
+        </nav>
+        <h1>What sports would you like to play?</h1>
+
+        <div class="row">
+            <div class="col s12 m6 l3">
+              <div class="card medium">
+                <div class="card-image">
+                  <img id="basketball-pic" src="http://images.clipartpanda.com/offense-clipart-jRiGGgAcL.gif">
+                </div>
+                <div class="card-content">
+                  <span>
+                    <h5 class="cardTitle">Basketball</h5>
+                    <input type="checkbox"  id="basketball-checkbox" />
+                    <label for="basketball-checkbox"></label>
+                  </span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+              <div class="card medium">
+                <div class="card-image">
+                  <img id="soccer-pic" src="http://cliparting.com/wp-content/uploads/2016/06/Soccer-clipart-free-clipart-images.jpeg">
+                </div>
+                <div class="card-content">
+                  <span>
+                    <h5 class="cardTitle">Soccer</h5>
+                    <input type="checkbox"  id="soccer-checkbox" />
+                    <label for="soccer-checkbox"></label>
+                  </span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+              <div class="card medium">
+                <div class="card-image">
+                  <img id="volleyball-pic" src="http://images.clipartpanda.com/free-volleyball-clipart-dMiLKnpca.jpeg">
+                </div>
+                <div class="card-content">
+                  <span>
+                    <h5 class="cardTitle">Volleyball</h5>
+                    <input type="checkbox"  id="volleyball-checkbox" />
+                    <label for="volleyball-checkbox"></label>
+                  </span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col s12 m6 l3">
+              <div class="card medium">
+                <div class="card-image">
+                  <img id="football-pic" src="http://images.clipartpanda.com/football-clipart-RiG6a7A6T.png">
+                </div>
+                <div class="card-content">
+                  <span>
+                    <h5 class="cardTitle">Football</h5>
+                    <input type="checkbox"  id="football-checkbox"  />
+                    <label for="football-checkbox"></label>
+                  </span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
