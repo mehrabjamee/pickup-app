@@ -53,6 +53,9 @@ app.get('/homepage', function(request, response){
   response.render('homepage.ejs')
 })
 
+app.get('/about', function(request, response){
+  response.render('aboutus.ejs')
+})
 
 
 
