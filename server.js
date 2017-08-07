@@ -33,10 +33,6 @@ app.get('/', function(request, response){
   response.render('home.ejs')
 })
 
-// app.post('/', function(request, response){
-    
-// })
-
 app.get('/dem-parks', function(request, response){
   response.render('dem-parks.ejs')
 })
@@ -53,9 +49,13 @@ app.get('/calendarPreferences', function(request, response){
   response.render('calendarPreferences.ejs')
 })
 
-app.get('/quickstart', function(request, response){
-  response.render('quickstart.html')
+app.get('/homepage', function(request, response){
+  response.render('homepage.ejs')
 })
+
+
+
+
 
 var port = process.env.PORT || 8080
 

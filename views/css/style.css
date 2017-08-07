@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Raleway:600,700,800');
+
+
 nav {
     height: 70px;
     line-height: 70px;
@@ -21,7 +25,7 @@ nav .button-collapse i {
 }
 
 .nav-wrapper {
-    background-color: #325ff4;
+    background-color: #567dff;
 }
 
 .pickupLogo {
@@ -42,4 +46,16 @@ nav .button-collapse i {
     margin-right: 45%;
 }
 
+h1 {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
 
+h3 {
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+}
+
+.collection-item:hover {
+    background-color: #ccc;
+}
