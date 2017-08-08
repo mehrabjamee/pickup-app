@@ -30,6 +30,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(logger('dev'))
 
 app.get('/', function(request, response){
+  response.render('landingpage.ejs')
+})
+
+app.get('/signup', function(request, response){
   response.render('home.ejs')
 })
 

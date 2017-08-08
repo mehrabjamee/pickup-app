@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pickup App</title>
+        
+        <!-- Adding Materialize CSS, Google Material Icons, link to style.css page -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <!-- Firebase Insert Start -->
+        <script src="https://www.gstatic.com/firebasejs/4.1.5/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAC3Cdx-Ya4DiWK_2b1CBnSfLBPHyCaMkE",
+            authDomain: "pickup-app-991e4.firebaseapp.com",
+            databaseURL: "https://pickup-app-991e4.firebaseio.com",
+            projectId: "pickup-app-991e4",
+            storageBucket: "",
+            messagingSenderId: "81698118663"
+          };
+          firebase.initializeApp(config);
+        </script>
+        
+        <!-- Firebase Insert End -->
+        
+        <!-- Adding jquery to make things work -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+        
+        <script src="js/firebaseAuth.js"></script>
+        
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="/" class="brand-logo left"><img id='pickupLogo' style="max-height: 60px; margin-top: 4px; margin-left: 5px" src='img/Pickup_Logo.svg' ></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/aboutus">About</a></li>
+                <!--<li><a href="badges.html">Components</a></li>-->
+                <!--<li><a href="collapsible.html">JavaScript</a></li>-->
+              </ul>
+            </div>
+        </nav>
+        
+
+                    
+          <div class="parallax-container">
+            <div class="parallax"><img src="https://c1.staticflickr.com/5/4094/4768980876_7fcf6a5850_b.jpg"></div>
+          </div>
+          
+          <div class="section white">
+            <div class="row container">
+              <h2 class="header">What is Pickup?</h2>
+              <h5 class="grey-text text-darken-3 lighten-3">Pickup makes scheduling pickup games with you friends quick and effortless. <br><br> Pickup strives to bring people together through the passion of physical activity and to encourage a lifelong love of sports.  
+              <br><br>Pickup is a social media platform which connects young athletes within the borough of Queens and allows them to organize a pickup sports game choosing the sport, the amount of people, the location, and the time.</h5>
+            </div>
+          </div>
+          
+          <div class="parallax-container">
+            <div class="parallax"><img src="http://thecollegetailgate.com/wp-content/uploads/2016/12/ActualCover.jpg"></div>
+          </div>
+          
+          <div class="section white">
+            <div class="row container">
+              <h2 class="header">What good can Pickup do?</h2>
+              <h6 class="grey-text text-darken-3 lighten-3"></h6>
+            </div>
+          </div>
+
+        <center><a class="btn-large waves-effect" href="/calendarPreferences" style="margin: 10px">NEXT</a></center>
+        <script>    $(document).ready(function(){
+                      $('.parallax').parallax();
+                    });</script>
+    </body>
+</html>
