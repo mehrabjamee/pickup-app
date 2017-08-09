@@ -36,6 +36,14 @@ nav .button-collapse i {
     width: 80%;
 }
 
+#soccer-pic {
+    width: 75%;
+}
+
+#volleyball-pic {
+    width: 75%;
+}
+
 #volleyball-checkbox {
     float: left;
 }
@@ -43,7 +51,7 @@ nav .button-collapse i {
 .cardTitle {
     float:left;
     margin-top: 0px;
-    margin-right: 45%;
+    margin-right: 40%;
 }
 
 h1 {
